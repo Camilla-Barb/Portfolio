@@ -1,5 +1,6 @@
 "use client";
 import useBreakpoint from "../hooks/useBreakpoint";
+import { Bars3Icon } from "@heroicons/react/outline";
 
 import Link from "next/link";
 
@@ -12,6 +13,10 @@ export default function Navbar() {
         //hamburger menu
         <div className="">
           <p>hamburger menu</p>
+          <button>
+            <Bars3Icon className="w-5 h-5 ml-2 text-gray-500" />
+          </button>
+          {/* <img className="">menu</img> */}
           {/* <Link href="/" className="p-8">
             Homepage
           </Link>
