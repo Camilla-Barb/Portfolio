@@ -39,26 +39,26 @@ const Modal = ({
         }
       }}
       tabIndex={-1}
-      className="modal-open fixed h-100% inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
+      className="modal-open fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
     >
       <motion.div
-        className="bg-white p-6 rounded-lg shadow-lg max-w-lg w-full relative"
+        className="bg-white h-screen p-6 rounded-lg shadow-lg max-w-lg w-full relative"
         role="dialog"
         aria-modal="true"
         aria-labelledby={title && "modal-title"}
         aria-describedby={description && "modal-description"}
         initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.4 }}
         exit={{ opacity: 0, scale: 0.95 }}
-        transition={{ duration: 0.2 }}
       >
         <button
-          className="absolute top-4 right-4"
+          className="w-8 absolute top-4 right-4 z-10"
           ref={closeBtn}
           onClick={onClose}
           aria-label="Close"
         >
-          <XMarkIcon className="w-8" />
+          <XMarkIcon />
         </button>
         {title && (
           <h2 className="sr-only" id="modal-title">
@@ -70,7 +70,7 @@ const Modal = ({
             {description}
           </p>
         )}
-        <div>{children}</div>
+        {children}
       </motion.div>
     </div>
   );
