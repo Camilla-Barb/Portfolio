@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Camilla Barbieri | Frontend Developer",
   description:
-    "Camilla Barbieri is a Web Developer specialized in frontend solutions",
+    "Camilla Barbieri is a Web Developer specialized in frontend solutions.",
 };
 
 export default function RootLayout({
@@ -34,13 +34,13 @@ export default function RootLayout({
       </head>
 
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased w-screen`}
       >
         <main>
           <Navbar />
           {children}
-          <Footer />
         </main>
+        <Footer />
       </body>
     </html>
   );

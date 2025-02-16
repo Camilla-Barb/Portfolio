@@ -24,7 +24,10 @@ export default function Navbar() {
       {breakpoint === "mobile" && (
         //hamburger menu
         <div className="mobile-menu">
-          <div className="bg-coffee flex items-center justify-end p-5">
+          <div className="bg-coffee flex items-center justify-between p-5">
+            <Link href="/" className="text-background">
+              Logo
+            </Link>
             <button
               className="w-8 text-background"
               onClick={() => setIsModalOpen(true)}
@@ -40,7 +43,7 @@ export default function Navbar() {
           >
             <ul
               ref={menuMobile}
-              className={`flex flex-col transition-all duration-300 ease-in-out ${
+              className={`flex flex-col transition-all duration-300 ease-in-out pt-20 text-xl ${
                 isModalOpen
                   ? "translate-x-0 opacity-100 "
                   : "-translate-x-full opacity-0"
