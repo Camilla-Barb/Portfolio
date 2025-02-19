@@ -36,10 +36,11 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased w-screen`}
       >
-        <main>
+        <header>
           <Navbar />
-          {children}
-        </main>
+        </header>
+
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
