@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="bg-white border-gray-300 shadow-[0_-4px_6px_rgba(0,0,0,0.1)] w-full p-10">
-      <div className="flex gap-2 pb-10 border-b border-coffee">
+      <div className="flex gap-2 pb-10 border-b border-indigo">
         <Link href="https://www.linkedin.com/in/camilla-barbieri-614a471a0">
           <Image
             src="/img/linkedin.svg"

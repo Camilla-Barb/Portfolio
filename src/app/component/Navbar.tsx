@@ -23,7 +23,7 @@ export default function Navbar() {
     <>
       {breakpoint === "mobile" && (
         //hamburger menu
-        <div className="mobile-menu bg-white text-coffee min-h-10 border-gray-300 shadow-[0_-4px_6px_rgba(0,0,0,0.1)] ">
+        <div className="mobile-menu bg-white text-indigo min-h-10 border-gray-300 shadow-[0_-4px_6px_rgba(0,0,0,0.1)] ">
           <div className="flex items-center justify-between p-5">
             <Link className="pl-8 font-bold" href="/">
               Logo
@@ -89,11 +89,11 @@ export default function Navbar() {
       )}
 
       {breakpoint === "desktop" && (
-        <div className="bg-white text-coffee flex items-center justify-between shadow-[0_-2px_6px_rgba(0,0,0,0.1)] w-full">
+        <div className="bg-white text-indigo flex items-center justify-between shadow-[0_-2px_6px_rgba(0,0,0,0.1)] w-full">
           <Link className="pl-10 font-bold" href="/">
             Logo
           </Link>
-          <div className="flex pr-20 gap-2 pt-10 pb-10 items-center justify-end">
+          <div className="flex pr-20 gap-2 items-center justify-end font-bold">
             <Link href="/" className="p-8">
               Homepage
             </Link>

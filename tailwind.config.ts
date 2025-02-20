@@ -13,6 +13,7 @@ export default {
       colors: {
         white: "var(--white)",
         coffee: "var(--coffee)",
+        indigo: "var(--text)",
       },
     },
   },
