@@ -37,11 +37,12 @@ export default function Homepage() {
         >
           <svg
             className="max-sm:block hidden absolute bottom-0 w-full"
+            stroke="none"
             viewBox="0 0 1440 320"
           >
             <path
               fill="white"
-              d="M0,288 C480,160 960,160 1440,288 L1440,320 L0,320 Z"
+              d="M0,288 C480,160 960,160 1440,288 L1440,400 L0,400 Z"
             ></path>
           </svg>
           <section className="hero-section p-10 gap-16 sm:p-20">
