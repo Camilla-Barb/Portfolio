@@ -33,15 +33,24 @@ export default function Homepage() {
             imageLoaded
               ? "opacity-70 transition-opacity duration-500"
               : "opacity-0"
-          } bg-[url(/img/hero-bg.png)] w-full bg-no-repeat bg-cover bg-center min-h-[650px] max-h-[800px]`}
+          } bg-[url(/img/hero-bg.png)] w-full bg-no-repeat bg-cover bg-center min-h-[650px] max-h-[800px] md:bg-bottom`}
         >
-          <section className="hero-section p-12 pt-20 pb-20 gap-16 sm:p-20">
+          <svg
+            className="max-sm:block hidden absolute bottom-0 w-full"
+            viewBox="0 0 1440 320"
+          >
+            <path
+              fill="white"
+              d="M0,288 C480,160 960,160 1440,288 L1440,320 L0,320 Z"
+            ></path>
+          </svg>
+          <section className="hero-section p-10 gap-16 sm:p-20">
             <article className="relative z-3 flex flex-col justify-start items-start gap-2 text-2xl">
-              <div className="hero-text-container relative before:content-[''] before:block before:w-1/3 before:h-[5px] before:bg-indigo before:mb-2">
+              <div className="hero-text-container before:content-[''] before:block before:w-1/3 before:h-[4px] before:bg-indigo before:mb-2">
                 <h1 className="font-bold">Frontend Developer.</h1>
                 <p>Camilla Barbieri</p>
               </div>
-              <div className="inner-content_secondary pt-10">
+              <div className="inner-content_secondary pt-5">
                 <p className="text-sm">
                   I am a Front-end Developer interested in everything that
                   orbits the scientific and IT world. Curious and enterprising,
@@ -54,7 +63,7 @@ export default function Homepage() {
         </div>
       </div>
       <section className="flex flex-col justify-start items-start gap-2 text-2xl pt-5">
-        <div className="section-container p-12 w-full">
+        <div className="section-container p-4 w-full">
           <h2 className="text-center font-bold">Skills</h2>
 
           <ul className="cards-container flex flex-col lg:flex-row gap-6 p-6">

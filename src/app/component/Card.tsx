@@ -10,7 +10,7 @@ interface CardProps {
 
 const Card = ({ title, description, icon }: CardProps) => {
   return (
-    <li className="card text-center rounded-xl border-gray-300 shadow-2xl bg-white h-min-100 w-full p-8">
+    <li className="card relative bg-white text-center rounded-xl shadow-xl h-min-100 w-full p-8">
       <div className="card-content flex flex-col items-center gap-10 justify-center">
         {icon && (
           <div className="card-icon rounded-md bg-pink-500 bg-opacity-10 p-4">
