@@ -1,3 +1,5 @@
+"use client";
+import { useEffect, useState } from "react";
 import Card from "./component/Card";
 import {
   TvIcon,
@@ -9,10 +11,30 @@ import {
 // max-sm:bg-[center_bottom_-50px]
 
 export default function Homepage() {
+  const [imageLoaded, setImageLoaded] = useState<boolean>(false);
+
+  useEffect(() => {
+    const bgImage = new Image();
+    bgImage.src = "/img/hero-bg.png";
+    bgImage.onload = () => setImageLoaded(true);
+  }, []);
+
   return (
-    <div className="bg-white text-indigo font-[family-name:var(--font-geist-sans)]">
-      <div className="relative bg-gradient-to-b from-purple-500 via-pink-500 to-transparent w-full">
-        <div className="relative bg-[url(/img/hero-bg.png)] bg-no-repeat bg-cover bg-center w-full min-h-[650px] opacity-70">
+    <div className="bg-white relative text-indigo font-[family-name:var(--font-geist-sans)] w-full ">
+      <div
+        className={`${
+          imageLoaded
+            ? "opacity-1 transition-opacity duration-500"
+            : "opacity-0"
+        } relative bg-gradient-to-b from-purple-500 via-pink-500 to-transparent w-full`}
+      >
+        <div
+          className={`${
+            imageLoaded
+              ? "opacity-70 transition-opacity duration-500"
+              : "opacity-0"
+          } bg-[url(/img/hero-bg.png)] w-full bg-no-repeat bg-cover bg-center min-h-[650px] max-h-[800px]`}
+        >
           <section className="hero-section p-12 pt-20 pb-20 gap-16 sm:p-20">
             <article className="relative z-3 flex flex-col justify-start items-start gap-2 text-2xl">
               <div className="hero-text-container relative before:content-[''] before:block before:w-1/3 before:h-[5px] before:bg-indigo before:mb-2">
