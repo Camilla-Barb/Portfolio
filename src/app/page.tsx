@@ -9,12 +9,14 @@ import {
 } from "@heroicons/react/16/solid";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Homepage() {
   const [imageLoaded, setImageLoaded] = useState<boolean>(false);
 
   useEffect(() => {
-    const bgImage = new Image();
+    const bgImage = new window.Image();
     bgImage.src = "/img/hero-bg.png";
     bgImage.onload = () => setImageLoaded(true);
   }, []);
@@ -58,9 +60,9 @@ export default function Homepage() {
       <section className="p-8">
         <article>
           <p className="text-sm text-center">
-            I am a Front-end Developer interested in everything that orbits the
-            scientific and IT world. Curious and enterprising, I have more than
-            two years of experience in developing e-commerce websites.
+            I am a front-end developer interested in everything that orbits the
+            scientific and IT world. I am working in retail projects of
+            different brands, from luxury and fashion to beauty and cosmetics.
           </p>
         </article>
       </section>
@@ -110,7 +112,36 @@ export default function Homepage() {
         </div>
       </section>
       {/* TextImage section */}
-      <section></section>
+      <section className="mt-10 p-12 grid md:grid-cols-2 gap-10 bg-white w-full min-h-[600px] h-full">
+        <figure className="relative max-md:aspect-square aspect-3/2">
+          <Image
+            src="/img/imageCol.png"
+            objectFit="cover"
+            layout="fill"
+            className="bg-center bg-no-repeat"
+            alt=""
+            priority
+            aria-hidden
+          />
+          <div className="absolute inset-0 bg-white opacity-10"></div>
+        </figure>
+        <article className="flex flex-col gap-8 justify-center md:text-center md:p-10 w-full">
+          <p>
+            I maintain and implement front end web solutions and architectures,
+            through the writing of optimal algorithms and clean code, to
+            guarantee the website functionalities. I take care of the website
+            performance and web accessibility, in accordance with WCAG 2.2
+            guidelines. I had a strong interest on the Generative AI on which I
+            keep myself updated and always willing to learn new technologies.
+          </p>
+          <Link
+            href="/pages/about"
+            className="self-center p-2 rounded-lg bg-gradient-to-b from-purple-100 to-pink-100 text-indigo-500 font-bold"
+          >
+            See More
+          </Link>
+        </article>
+      </section>
     </div>
   );
 }
