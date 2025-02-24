@@ -8,7 +8,6 @@ import {
   CheckCircleIcon,
 } from "@heroicons/react/16/solid";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 
 export default function Homepage() {
@@ -73,9 +72,6 @@ export default function Homepage() {
             className="w-full !pb-4"
             slidesPerView={1.2}
             spaceBetween={12}
-            pagination={{ clickable: true }}
-            navigation
-            modules={[Navigation, Pagination]}
             breakpoints={{
               768: {
                 enabled: false,
@@ -113,6 +109,8 @@ export default function Homepage() {
           </Swiper>
         </div>
       </section>
+      {/* TextImage section */}
+      <section></section>
     </div>
   );
 }
