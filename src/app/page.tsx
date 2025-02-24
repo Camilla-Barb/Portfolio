@@ -69,7 +69,7 @@ export default function Homepage() {
       {/* cards section */}
       <section className="text-2xl pt-5 p-10 w-full bg-gradient-to-b from-purple-100 to-pink-100">
         <div className="section-container w-full">
-          <h2 className="text-center font-bold p-4">Skills</h2>
+          <h2 className="text-center font-bold p-4">Strengths</h2>
           <Swiper
             className="w-full !pb-4"
             slidesPerView={1.2}
@@ -86,14 +86,8 @@ export default function Homepage() {
           >
             <SwiperSlide>
               <Card
-                title="Strategy"
+                title="Algorithms"
                 icon={<LightBulbIcon width={30} height={30} aria-hidden />}
-              />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Card
-                title="Study"
-                icon={<BookOpenIcon width={30} height={30} aria-hidden />}
               />
             </SwiperSlide>
             <SwiperSlide>
@@ -106,6 +100,12 @@ export default function Homepage() {
               <Card
                 title="Accessibility"
                 icon={<CheckCircleIcon width={30} height={30} aria-hidden />}
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Card
+                title="Study"
+                icon={<BookOpenIcon width={30} height={30} aria-hidden />}
               />
             </SwiperSlide>
           </Swiper>
@@ -132,13 +132,13 @@ export default function Homepage() {
             guarantee the website functionalities. I take care of the website
             performance and web accessibility, in accordance with WCAG 2.2
             guidelines. I had a strong interest on the Generative AI on which I
-            keep myself updated and always willing to learn new technologies.
+            keep myself updated to learn new technologies.
           </p>
           <Link
             href="/pages/about"
             className="self-center p-2 rounded-lg bg-gradient-to-b from-purple-100 to-pink-100 text-indigo-500 font-bold"
           >
-            See More
+            About me
           </Link>
         </article>
       </section>
