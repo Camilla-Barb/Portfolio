@@ -23,7 +23,7 @@ export default function Navbar() {
     <>
       {breakpoint === "mobile" && (
         //hamburger menu
-        <div className="mobile-menu bg-white text-indigo min-h-10 border-gray-300 shadow-[0_-4px_6px_rgba(0,0,0,0.1)] ">
+        <div className="mobile-menu bg-white text-indigo min-h-10">
           <div className="flex items-center justify-between p-5">
             <Link className="pl-8 font-bold font-italic" href="/">
               Logo
