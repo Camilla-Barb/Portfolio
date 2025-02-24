@@ -10,6 +10,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        italic: ["Playwrite DE Grund", "serif"],
+      },
       colors: {
         white: "var(--white)",
         coffee: "var(--coffee)",
