@@ -35,7 +35,7 @@ export default function Homepage() {
             imageLoaded
               ? "opacity-70 transition-opacity duration-500"
               : "opacity-0"
-          } bg-[url(/img/hero-bg.png)] w-full bg-no-repeat bg-cover bg-center min-h-[650px] max-h-[800px] md:bg-bottom`}
+          } bg-[url(/img/hero-bg.png)] w-full bg-no-repeat bg-cover bg-center max-sm:min-h-[450px] min-h-[650px] max-h-[800px] md:bg-bottom`}
         >
           <svg
             className="max-sm:block hidden absolute bottom-0 w-full"
@@ -77,7 +77,7 @@ export default function Homepage() {
             navigation
             modules={[Navigation, Pagination]}
             breakpoints={{
-              769: {
+              768: {
                 enabled: false,
                 slidesPerView: 4,
                 spaceBetween: 20,
