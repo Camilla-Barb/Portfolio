@@ -35,6 +35,18 @@ body {
   }
 }
 
+.swiper-slide {
+  @media (max-width: 767px) {
+    max-width: 180px;
+    &:first-child {
+      margin-left: 2rem;
+    }
+    &:last-child {
+      margin-right: 2rem;
+    }
+  }
+}
+
 // A11y
 
 * {

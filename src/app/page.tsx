@@ -57,7 +57,7 @@ export default function Homepage() {
         </div>
       </section>
       {/* paragraph section */}
-      <section className="p-8">
+      <section className="p-8 md:p-16">
         <article>
           <p className="text-sm text-center">
             I am a front-end developer interested in everything that orbits the
@@ -67,12 +67,11 @@ export default function Homepage() {
         </article>
       </section>
       {/* cards section */}
-      <section className="text-2xl pt-5 p-10 w-full bg-gradient-to-b from-purple-100 to-pink-100">
+      <section className="text-2xl pt-5 md:p-10 pb-10 w-full bg-gradient-to-b from-purple-100 to-pink-100">
+        <h2 className="text-center font-bold p-4">Strengths</h2>
         <div className="section-container w-full">
-          <h2 className="text-center font-bold p-4">Strengths</h2>
           <Swiper
-            className="w-full !pb-4"
-            slidesPerView={1.2}
+            slidesPerView="auto"
             spaceBetween={12}
             breakpoints={{
               768: {
@@ -84,7 +83,7 @@ export default function Homepage() {
               },
             }}
           >
-            <SwiperSlide>
+            <SwiperSlide className="">
               <Card
                 title="Algorithms"
                 icon={<LightBulbIcon width={30} height={30} aria-hidden />}
@@ -102,7 +101,7 @@ export default function Homepage() {
                 icon={<CheckCircleIcon width={30} height={30} aria-hidden />}
               />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className="">
               <Card
                 title="Study"
                 icon={<BookOpenIcon width={30} height={30} aria-hidden />}
@@ -125,7 +124,7 @@ export default function Homepage() {
           />
           <div className="absolute inset-0 bg-white opacity-10"></div>
         </figure>
-        <article className="flex flex-col gap-8 justify-center md:text-center md:p-10 w-full">
+        <article className="flex flex-col gap-8 justify-center text-center md:p-10 w-full">
           <p>
             I maintain and implement front end web solutions and architectures,
             through the writing of optimal algorithms and clean code, to
