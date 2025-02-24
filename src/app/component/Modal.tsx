@@ -42,7 +42,7 @@ const Modal = ({
       className="modal-open fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
     >
       <motion.div
-        className="bg-white h-screen p-6 rounded-lg shadow-lg max-w-lg w-full relative"
+        className="bg-white h-screen top-0 left-0 p-6 rounded-lg shadow-lg max-w-lg w-full relative"
         role="dialog"
         aria-modal="true"
         aria-labelledby={title && "modal-title"}
