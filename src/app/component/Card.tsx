@@ -13,7 +13,7 @@ const Card = ({ title, description, icon }: CardProps) => {
     <div className="card relative bg-white text-center rounded-xl shadow-xl h-min-100 w-full p-8">
       <div className="card-content flex flex-col items-center gap-6 justify-center">
         {icon && (
-          <div className="card-icon rounded-md bg-pink-300 bg-opacity-10 p-4">
+          <div className="card-icon rounded-md text-coffee bg-yellow-900/5 p-4">
             {icon}
           </div>
         )}

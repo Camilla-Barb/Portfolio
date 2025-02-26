@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="bg-white border-t-2 border-gray-200 w-full p-12 mt-20">
-      <div className="flex max-sm:gap-2 max-sm:justify-between gap-20 items-center pb-10 border-b border-indigo">
+      <div className="flex max-sm:gap-2 max-sm:justify-between gap-20 items-center pb-10 border-b">
         <div>
           <p className="font-bold pb-4">Say Hello</p>
           <Link href="mailto:barbiericamilla99@gmail.com">Text me!</Link>
@@ -16,9 +16,9 @@ export default function Footer() {
           >
             Find me on
             <Image
-              src="/img/linkedin.svg"
-              width={20}
-              height={20}
+              src="/img/neutral-linkedin.svg"
+              width={25}
+              height={25}
               alt=""
               aria-hidden
             />

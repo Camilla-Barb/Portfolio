@@ -3,8 +3,9 @@
 
 :root {
   --white: #ffffff;
-  /* --coffee: #756859; */
-  --coffee: #744700;
+  // --coffee: #693f26;
+  --coffee: #422006;
+  --cappuccino: #886d63;
   --indigo: #4b0082;
 }
 
@@ -26,7 +27,7 @@ ul {
 }
 
 body {
-  color: var(--indigo);
+  color: var(--coffee);
   background: var(--white);
   font-family: Arial, Helvetica, sans-serif;
 
