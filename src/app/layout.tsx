@@ -5,6 +5,7 @@ import "./styles/globals.scss"; // add in every root of the application
 
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
+import Prefooter from "./component/Prefooter";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,6 +42,7 @@ export default function RootLayout({
         </header>
 
         <main>{children}</main>
+        <Prefooter />
         <Footer />
       </body>
     </html>
