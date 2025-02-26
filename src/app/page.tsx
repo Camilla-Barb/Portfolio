@@ -135,7 +135,7 @@ export default function Homepage() {
           </p>
           <Link
             href="/pages/about"
-            className="self-center p-2 rounded-xl font-bold bg-coffee text-white"
+            className="self-center p-2 rounded-xl font-bold text-coffee bg-yellow-900/10"
           >
             About me
           </Link>
