@@ -22,7 +22,7 @@ export default function Homepage() {
   }, []);
 
   return (
-    <div className="bg-white relative text-yellow-950/80 font-[family-name:var(--font-geist-sans)] w-full">
+    <div className="bg-white relative text-coffee font-[family-name:var(--font-geist-sans)] w-full">
       {/* hero section */}
       <section
         className={`${
@@ -135,7 +135,7 @@ export default function Homepage() {
           </p>
           <Link
             href="/pages/about"
-            className="self-center p-2 rounded-xl font-bold bg-yellow-950/80 text-white"
+            className="self-center p-2 rounded-xl font-bold bg-coffee text-white"
           >
             About me
           </Link>
