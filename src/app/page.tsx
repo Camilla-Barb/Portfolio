@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 import Card from "./component/Card";
 import {
   TvIcon,
@@ -10,10 +11,10 @@ import {
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Homepage() {
   const [imageLoaded, setImageLoaded] = useState<boolean>(false);
+  const router = useRouter();
 
   useEffect(() => {
     const bgImage = new window.Image();
@@ -135,12 +136,9 @@ export default function Homepage() {
             guidelines. I had a strong interest on the Generative AI on which I
             keep myself updated to learn new technologies.
           </p>
-          <Link
-            href="/pages/about"
-            className="self-center p-2 rounded-xl font-bold text-coffee bg-yellow-900/10"
-          >
+          <button onClick={() => router.push("pages/about")} className="btn">
             Find out more
-          </Link>
+          </button>
         </article>
       </section>
     </div>

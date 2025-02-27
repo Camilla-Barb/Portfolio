@@ -36,6 +36,10 @@ body {
   }
 }
 
+.btn {
+  @apply self-center p-2 rounded-xl font-bold text-coffee bg-yellow-900/10;
+}
+
 .swiper-slide {
   @media (max-width: 767px) {
     max-width: 180px;

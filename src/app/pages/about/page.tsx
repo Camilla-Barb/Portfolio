@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function AboutPage() {
+export default function About() {
   return (
     <section className="prefooter-section p-5 border-t border-yellow-950/30">
       <h1 className="text-3xl font-bold">About Me</h1>
