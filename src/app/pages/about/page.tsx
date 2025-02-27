@@ -46,8 +46,8 @@ export default function About() {
             <h2 className="font-bold pb-2 text-2xl">Coder</h2>
             <p className="pt-6 pb-6 p-4">
               Coding is part of my daily life, through this I put into practice
-              what I study. Programming has helped me as a way of thinking in my
-              personal life too.
+              what I study. Programming has improved my propensity for logical
+              thinking.
             </p>
             <ul className="max-lg:bg-yellow-900/10 p-4">
               <li>HTML / CSS</li>
