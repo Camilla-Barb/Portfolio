@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section className="prefooter-section p-5 border-t border-yellow-950/30">
-      <h1 className="text-3xl font-bold">About Me</h1>
+    <section className="about-section p-8 bg-gradient-to-t from-white to-yellow-950/10">
+      <h1 className="text-3xl font-bold pb-10 pt-10">About.</h1>
 
       <Image
         src="/img/pie-chart.png"
