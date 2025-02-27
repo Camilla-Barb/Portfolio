@@ -74,7 +74,11 @@ export default function ContactForm() {
         Send Message
       </button>
 
-      {status && <p className="pt-2 text-red-700">{status}</p>}
+      {status && (
+        <p className="pt-2 text-red-700" role="alert">
+          {status}
+        </p>
+      )}
     </form>
   );
 }
