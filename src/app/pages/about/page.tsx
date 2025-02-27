@@ -32,7 +32,7 @@ export default function About() {
             <h2 className="font-bold pb-2 text-2xl">Student</h2>
             <p className="pt-6 pb-6 p-4">
               Studying is fundamental for me. I love studying and learning new
-              things, not. Studying is an integral part of my work.
+              things. Studying is an integral part of my work.
             </p>
             <ul className="max-lg:bg-yellow-900/10 p-4">
               <li>Projects</li>
@@ -45,7 +45,7 @@ export default function About() {
           <div className="max-lg:pt-16 w-full">
             <h2 className="font-bold pb-2 text-2xl">Coder</h2>
             <p className="pt-6 pb-6 p-4">
-              Coding is part of my daily life, through which I put into practice
+              Coding is part of my daily life, through this I put into practice
               what I study. Programming has helped me as a way of thinking in my
               personal life too.
             </p>
