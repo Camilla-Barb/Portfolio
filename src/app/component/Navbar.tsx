@@ -89,7 +89,7 @@ export default function Navbar() {
       )}
 
       {breakpoint === "desktop" && (
-        <div className="bg-white font-bold flex items-center justify-between shadow-[0_-2px_6px_rgba(0,0,0,0.1)] w-full">
+        <div className="bg-white font-bold flex items-center justify-between w-full">
           <Link className="pl-10 font-italic" href="/">
             Logo
           </Link>

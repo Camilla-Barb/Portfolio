@@ -30,7 +30,7 @@ export default function ContactForm() {
       if (response.ok) {
         setFormData({ name: "", email: "", message: "" });
       } else {
-        setStatus("The message could not be sent.");
+        setStatus("The message cannot be sent.");
       }
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
