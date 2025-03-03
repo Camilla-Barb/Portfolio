@@ -62,7 +62,7 @@ export default function Homepage() {
       {/* paragraph section */}
       <section className="p-8 md:p-16">
         <article>
-          <p className="text-sm text-center">
+          <p className="text-center">
             I am a front-end developer interested in everything that orbits the
             scientific and IT world. I am working in retail projects of
             different brands, from luxury and fashion to beauty and cosmetics.
