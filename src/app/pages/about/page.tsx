@@ -7,9 +7,9 @@ export default function About() {
       <section className="p-8 pb-6 bg-gradient-to-t from-white to-yellow-950/10">
         <h1 className="text-3xl font-bold pb-10 pt-10 pl-6">About.</h1>
         <p className="text-xl md:pl-10 md:pr-10 text-center">
-          I am a Frontend Developer based in Milan, Italy. I've enjoyed turning
-          complex problems into simple, through logic and reasoning. Since 2021
-          I discovered my passion for web development.
+          I am a Frontend Developer based in Milan, Italy. I have enjoyed
+          turning complex problems into simple, through logic and reasoning.
+          Since 2021 I discovered my passion for web development.
         </p>
         <p className="text-xl font-bold md:pl-10 md:pr-10 text-center pt-5">
           Now I do the job I love.
