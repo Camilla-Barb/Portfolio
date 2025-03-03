@@ -9,6 +9,7 @@ export default function ContactForm() {
     message: "",
   });
 
+  const [error, setError] = useState("");
   const [status, setStatus] = useState("");
 
   const handleChange = (
@@ -29,12 +30,13 @@ export default function ContactForm() {
 
       if (response.ok) {
         setFormData({ name: "", email: "", message: "" });
+        setStatus("The message has been sent. Thank you!");
       } else {
-        setStatus("The message cannot be sent.");
+        setError("The message cannot be sent.");
       }
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
-      setStatus("Error sending message.");
+      setError("Error sending message.");
     }
   };
 
@@ -74,8 +76,13 @@ export default function ContactForm() {
         Send Message
       </button>
 
+      {error && (
+        <p className="pt-2 text-red-700 font-bold" role="alert">
+          {error}
+        </p>
+      )}
       {status && (
-        <p className="pt-2 text-red-700" role="alert">
+        <p className="pt-2 font-bold" role="alert">
           {status}
         </p>
       )}
