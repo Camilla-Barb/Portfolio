@@ -37,9 +37,9 @@ export default function Footer() {
           </li>
         </ul>
       </div>
-      <div className="pt-8">
+      <div className="pt-8 max-sm:text-center">
         <span>© Camilla Barbieri 2025</span>
-        <p className="text-center pt-4">
+        <p className="pt-4 text-center">
           Coded in Visual Studio Code by yours truly. Built with Next.js and
           Tailwind CSS, deployed with Vercel.
         </p>
