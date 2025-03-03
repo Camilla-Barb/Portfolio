@@ -14,7 +14,6 @@ export default function useBreakpoint() {
     // Call everytime the viewport dimension change
     const updateSize = (entries: ResizeObserverEntry[]) => {
       for (const entry of entries) {
-        console.log(entry.contentRect);
         setWidth(entry.contentRect.width);
       }
     };

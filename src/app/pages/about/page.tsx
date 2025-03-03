@@ -4,12 +4,12 @@ import Image from "next/image";
 export default function About() {
   return (
     <div className="about-section">
-      <section className="p-10 pb-6 bg-gradient-to-t from-white to-yellow-950/10">
-        <h1 className="text-3xl font-bold pb-16 pt-10">About.</h1>
+      <section className="p-8 pb-6 bg-gradient-to-t from-white to-yellow-950/10">
+        <h1 className="text-3xl font-bold pb-10 pt-10 pl-6">About.</h1>
         <p className="text-xl md:pl-10 md:pr-10 text-center">
-          I am a Frontend Developer based in Milan, Italy. Since 2021 I
-          discovered my passion for web development. I started doing self-taught
-          projects and studying.
+          I am a Frontend Developer based in Milan, Italy. I've enjoyed turning
+          complex problems into simple, through logic and reasoning. Since 2021
+          I discovered my passion for web development.
         </p>
         <p className="text-xl font-bold md:pl-10 md:pr-10 text-center pt-5">
           Now I do the job I love.
@@ -31,13 +31,14 @@ export default function About() {
           <div className="w-full">
             <h2 className="font-bold pb-2 text-2xl">Student</h2>
             <p className="pt-6 pb-6 p-4">
-              Studying is fundamental for me. I love studying and learning new
-              things. Studying is an integral part of my work.
+              Studying is essential and an integral part of my work. I love
+              studying and learning new things through which I look for new
+              ideas and a continuous personal improvement.
             </p>
             <ul className="max-lg:bg-yellow-900/10 p-4">
-              <li>Projects</li>
+              <li>Personal projects</li>
               <li>University</li>
-              <li>Books</li>
+              <li>Books & Documentation</li>
               <li>Curiosity attitude</li>
               <li>Geek</li>
             </ul>
@@ -46,8 +47,8 @@ export default function About() {
             <h2 className="font-bold pb-2 text-2xl">Coder</h2>
             <p className="pt-6 pb-6 p-4">
               Coding is part of my daily life, through this I put into practice
-              what I study. Programming has improved my propensity for logical
-              thinking.
+              what I study. Programming is not just a job, it allows you to
+              learn a way of thinking that makes everyday life easier.
             </p>
             <ul className="max-lg:bg-yellow-900/10 p-4">
               <li>HTML / CSS</li>

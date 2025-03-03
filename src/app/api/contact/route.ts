@@ -21,9 +21,6 @@ export async function POST(req: Request) {
       },
     });
 
-    console.log("EMAIL_USER:", process.env.EMAIL_USER);
-    console.log("EMAIL_PASS:", process.env.EMAIL_PASS);
-
     await transporter.sendMail({
       from: email,
       to: process.env.EMAIL_USER,
@@ -34,7 +31,6 @@ export async function POST(req: Request) {
     return NextResponse.json({ success: true, message: "Message received!" });
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (error) {
-    console.log(error);
     return NextResponse.json({ error: "Server error" }, { status: 500 });
   }
 }

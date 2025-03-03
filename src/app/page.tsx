@@ -132,9 +132,9 @@ export default function Homepage() {
             I maintain and implement front end web solutions and architectures,
             through the writing of optimal algorithms and clean code, to
             guarantee the website functionalities. I take care of the website
-            performance and web accessibility, in accordance with WCAG 2.2
-            guidelines. I had a strong interest on the Generative AI on which I
-            keep myself updated to learn new technologies.
+            performance and web accessibility. I had a strong interest on the
+            Generative AI on which I keep myself updated to learn new
+            technologies.
           </p>
           <button onClick={() => router.push("pages/about")} className="btn">
             Find out more
