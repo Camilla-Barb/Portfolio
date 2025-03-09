@@ -47,15 +47,15 @@ const Modal = ({
         className="modal-open fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 overflow-hidden"
       >
         <motion.div
-          className="bg-white h-full top-0 left-0 p-6 rounded-lg shadow-lg w-full relative"
+          className="bg-white h-full top-0 right-0 p-6 rounded-lg shadow-lg w-full fixed"
           role="dialog"
           aria-modal="true"
           aria-labelledby={title && "modal-title"}
           aria-describedby={description && "modal-description"}
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.4 }}
-          exit={{ opacity: 0, scale: 0.95 }}
+          initial={{ x: "100%" }}
+          animate={{ x: isOpen ? 0 : "100%" }}
+          exit={{ x: "100%" }}
+          transition={{ duration: 0.2 }}
         >
           <button
             className="w-8 absolute top-4 right-4 z-10"
