@@ -27,13 +27,19 @@ export default function Footer() {
 
         <ul className="menu pt-4">
           <li>
-            <Link href="/">Homepage</Link>
+            <Link href="/" prefetch={true}>
+              Homepage
+            </Link>
           </li>
           <li>
-            <Link href="/pages/about">About</Link>
+            <Link href="/pages/about" prefetch={true}>
+              About
+            </Link>
           </li>
           <li>
-            <Link href="/pages/contact">Contact</Link>
+            <Link href="/pages/contact" prefetch={true}>
+              Contact
+            </Link>
           </li>
         </ul>
       </div>

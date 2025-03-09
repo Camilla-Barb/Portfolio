@@ -1,9 +1,23 @@
 "use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function About() {
+  const [isLoaded, setIsLoaded] = useState<boolean>(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
   return (
-    <div className="about-section">
+    <motion.div
+      className="about-section"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: isLoaded ? 1 : 0 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3 }}
+    >
       <section className="p-8 pb-6 bg-gradient-to-t from-white to-yellow-950/10">
         <h1 className="text-3xl font-bold pb-10 pt-10 pl-6">About.</h1>
         <p className="text-xl md:pl-10 md:pr-10 text-center">
@@ -61,6 +75,6 @@ export default function About() {
           </div>
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 }

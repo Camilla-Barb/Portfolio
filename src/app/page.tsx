@@ -14,6 +14,7 @@ import Image from "next/image";
 
 export default function Homepage() {
   const [imageLoaded, setImageLoaded] = useState<boolean>(false);
+  const [goToAboutPage, setGoToAboutPage] = useState<boolean>(false);
   const router = useRouter();
 
   useEffect(() => {
@@ -21,6 +22,12 @@ export default function Homepage() {
     bgImage.src = "/img/hero-bg.png";
     bgImage.onload = () => setImageLoaded(true);
   }, []);
+
+  useEffect(() => {
+    if (goToAboutPage) {
+      router.replace("pages/about");
+    }
+  }, [router, goToAboutPage]);
 
   return (
     <div className="bg-white relative text-coffee font-[family-name:var(--font-geist-sans)] w-full">
@@ -136,7 +143,7 @@ export default function Homepage() {
             Generative AI on which I keep myself updated to learn new
             technologies.
           </p>
-          <button onClick={() => router.push("pages/about")} className="btn">
+          <button onClick={() => setGoToAboutPage(true)} className="btn">
             Find out more
           </button>
         </article>

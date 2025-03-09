@@ -25,7 +25,7 @@ export default function Navbar() {
         //hamburger menu
         <div className="mobile-menu font-bold bg-white min-h-10">
           <div className="flex items-center justify-between p-5">
-            <Link className="pl-8 font-italic" href="/">
+            <Link href="/" className="pl-8 font-italic" prefetch={true}>
               Logo
             </Link>
             <button
@@ -56,6 +56,7 @@ export default function Navbar() {
                     handleNavigation(e, "/");
                   }}
                   aria-label="Homepage"
+                  prefetch={true}
                 >
                   Homepage
                 </Link>
@@ -67,6 +68,7 @@ export default function Navbar() {
                     handleNavigation(e, "/pages/about");
                   }}
                   aria-label="About me"
+                  prefetch={true}
                 >
                   About
                 </Link>
@@ -79,6 +81,7 @@ export default function Navbar() {
                     handleNavigation(e, "/pages/contact");
                   }}
                   aria-label="Contacts"
+                  prefetch={true}
                 >
                   Contact
                 </Link>
@@ -90,17 +93,17 @@ export default function Navbar() {
 
       {breakpoint === "desktop" && (
         <div className="bg-white font-bold flex items-center justify-between w-full">
-          <Link className="pl-10 font-italic" href="/">
+          <Link href="/" className="pl-10 font-italic" prefetch={true}>
             Logo
           </Link>
           <div className="flex pr-20 gap-2 items-center justify-end font-bold">
-            <Link href="/" className="p-8">
+            <Link href="/" className="p-8" prefetch={true}>
               Homepage
             </Link>
-            <Link href="/pages/about" className="p-8">
+            <Link href="/pages/about" className="p-8" prefetch={true}>
               About
             </Link>
-            <Link href="/pages/contact" className="p-8">
+            <Link href="/pages/contact" className="p-8" prefetch={true}>
               Contact
             </Link>
           </div>
