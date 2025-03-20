@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Modal from "./Modal";
+import i18n from "../utils/translation";
 
 export default function Navbar() {
   const breakpoint = useBreakpoint();
@@ -87,6 +88,10 @@ export default function Navbar() {
                 </Link>
               </li>
             </ul>
+            <div className="languages flex gap-8">
+              <button onClick={() => i18n.changeLanguage("en")}>en</button>
+              <button onClick={() => i18n.changeLanguage("it")}>it</button>
+            </div>
           </Modal>
         </div>
       )}

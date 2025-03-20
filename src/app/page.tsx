@@ -11,12 +11,12 @@ import {
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Image from "next/image";
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 export default function Homepage() {
   const [imageLoaded, setImageLoaded] = useState<boolean>(false);
   const [goToAboutPage, setGoToAboutPage] = useState<boolean>(false);
-  // const t = useTranslation();
+  const { t } = useTranslation();
   const router = useRouter();
 
   useEffect(() => {
@@ -61,7 +61,7 @@ export default function Homepage() {
           <article className="hero-section absolute shadow-yellow-950 w-max bg-white p-2 pl-5 pr-10 pt-3 md:pr-32 md:pt-5 md:pb-5 left-0 bottom-5 md:top-20 md:bottom-auto xl:top-10 xl:relative xl:p-20  z-50">
             <div className="hero-text-container before:content-[''] before:block before:w-1/3 before:h-[4px] before:bg-coffee before:mb-2 z-2">
               <h1 className="font-bold text-xl md:text-2xl xl:pb-2">
-                Frontend Developer.
+                {t("homepage.job")}
               </h1>
               <p className="max-sm:text-lg lg:text-xl">Camilla Barbieri</p>
             </div>

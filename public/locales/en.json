@@ -1,0 +1,29 @@
+{
+  "nav": {
+    "homepage": "homepage",
+    "about": "about",
+    "contact": "Contact"
+  },
+  "homepage": {
+    "job": "Frontend Developer.",
+    "presentation": "I am a front-end developer interested in everything that orbits the scientific and IT world. I am working in retail projects of different brands, from luxury and fashion to beauty and cosmetics.",
+    "strengths": "My strengths",
+    "card": {
+      "card1": "Algorithms",
+      "card2": "Development",
+      "card3": "Accessibility",
+      "card4": "Study"
+    },
+    "description": "I maintain and implement front end web solutions and architectures, through the writing of optimal algorithms and clean code, to guarantee the website functionalities. I take care of the website performance and web accessibility. I had a strong interest on the Generative AI on which I keep myself updated to learn new technologies.",
+    "goToAboutBtn": "Find out more"
+  },
+  "prefooter": {
+    "goToContactBtn": "Contact me"
+  },
+  "footer": {
+    "sayHello": "Say Hello",
+    "sendEmail": "Text Me!",
+    "linkdln": "Find me on",
+    "siteInfo": "Coded in Visual Studio Code by yours truly. Built with Next.js and Tailwind CSS, deployed with Vercel."
+  }
+}
