@@ -11,10 +11,12 @@ import {
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Image from "next/image";
+// import { useTranslation } from "react-i18next";
 
 export default function Homepage() {
   const [imageLoaded, setImageLoaded] = useState<boolean>(false);
   const [goToAboutPage, setGoToAboutPage] = useState<boolean>(false);
+  // const t = useTranslation();
   const router = useRouter();
 
   useEffect(() => {

@@ -66,7 +66,7 @@ export default function About() {
             </p>
             <ul className="max-lg:bg-yellow-900/10 p-4">
               <li>HTML / CSS</li>
-              <li>Bootstrap / Tailwind</li>
+              <li>Bootstrap / Tailwind CSS</li>
               <li>JavaScript / TypeScript / C</li>
               <li>Web Accessibilty</li>
               <li>Next.js</li>
