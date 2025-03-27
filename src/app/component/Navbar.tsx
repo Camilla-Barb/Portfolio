@@ -7,11 +7,13 @@ import { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Modal from "./Modal";
 import i18n from "../utils/translation";
+import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
   const breakpoint = useBreakpoint();
   const menuMobile = useRef<HTMLUListElement>(null);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const { t } = useTranslation();
   const router = useRouter();
 
   const handleNavigation = async (e: React.MouseEvent, path: string) => {
@@ -32,7 +34,7 @@ export default function Navbar() {
             <button
               className="w-8"
               onClick={() => setIsModalOpen(true)}
-              aria-label="Menu"
+              aria-label="Open menu"
             >
               <Bars3Icon />
             </button>
@@ -59,7 +61,7 @@ export default function Navbar() {
                   aria-label="Homepage"
                   prefetch={true}
                 >
-                  Homepage
+                  {t("nav.homepage")}
                 </Link>
               </li>
               <li className="p-8">
@@ -71,7 +73,7 @@ export default function Navbar() {
                   aria-label="About me"
                   prefetch={true}
                 >
-                  About
+                  {t("nav.about")}
                 </Link>
               </li>
 
@@ -84,13 +86,27 @@ export default function Navbar() {
                   aria-label="Contacts"
                   prefetch={true}
                 >
-                  Contact
+                  {t("nav.contact")}
                 </Link>
               </li>
             </ul>
             <div className="languages flex gap-8">
-              <button onClick={() => i18n.changeLanguage("en")}>en</button>
-              <button onClick={() => i18n.changeLanguage("it")}>it</button>
+              <button
+                onClick={() => {
+                  i18n.changeLanguage("en");
+                  setIsModalOpen(false);
+                }}
+              >
+                en
+              </button>
+              <button
+                onClick={() => {
+                  i18n.changeLanguage("it");
+                  setIsModalOpen(false);
+                }}
+              >
+                it
+              </button>
             </div>
           </Modal>
         </div>
@@ -103,13 +119,13 @@ export default function Navbar() {
           </Link>
           <div className="flex pr-20 gap-2 items-center justify-end font-bold">
             <Link href="/" className="p-8" prefetch={true}>
-              Homepage
+              {t("nav.homepage")}
             </Link>
             <Link href="/pages/about" className="p-8" prefetch={true}>
-              About
+              {t("nav.about")}
             </Link>
             <Link href="/pages/contact" className="p-8" prefetch={true}>
-              Contact
+              {t("nav.contact")}
             </Link>
           </div>
         </div>

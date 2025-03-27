@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "homepage": "homepage",
+    "about": "about",
+    "contact": "Contact"
+  },
+  "homepage": {
+    "job": "Frontend Developer.",
+    "presentation": "I am a front-end developer interested in everything that orbits the scientific and IT world. I am working in retail projects of different brands, from luxury and fashion to beauty and cosmetics.",
+    "strengths": "My strengths",
+    "card": {
+      "card1": "Algorithms",
+      "card2": "Development",
+      "card3": "Accessibility",
+      "card4": "Study"
+    },
+    "description": "I maintain and implement front end web solutions and architectures, through the writing of optimal algorithms and clean code, to guarantee the website functionalities. I take care of the website performance and web accessibility. I had a strong interest on the Generative AI on which I keep myself updated to learn new technologies.",
+    "goToAboutBtn": "Find out more"
+  },
+  "contact": {
+    "title": "Contact Me.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "sendMessage": "Send",
+    "sent": "The message has been sent. Thank you!",
+    "notSent": "The message cannot be sent.",
+    "genericError": "Errore d'invio del messaggio."
+  },
+  "about": {
+    "title": "About.",
+    "paragraph": "I am a Frontend Developer based in Milan, Italy. I have enjoyed turning complex problems into simple, through logic and reasoning. Since 2021 I discovered my passion for web development.",
+    "boldParagraph": " Now I do the job I love.",
+    "student": "Student",
+    "studentParagraph": "Studying is essential and an integral part of my work. I love studying and learning new things through which I look for new ideas and a continuous personal improvement.",
+    "personalProjects": "Personal projects",
+    "university": "University",
+    "books": "Books & Documentation",
+    "curiosity": "Curiosity attitude",
+    "geek": "Geek",
+    "coder": "Coder",
+    "coderParagraph": " Coding is part of my daily life, through this I put into practice what I study. Programming is not just a job, it allows you to learn a way of thinking that makes everyday life easier.",
+    "html": "HTML / CSS",
+    "css": "Bootstrap / Tailwind CSS",
+    "js": "Bootstrap / Tailwind CSS",
+    "a11y": "Web Accessibility",
+    "next": "Next.js",
+    "react": "React JS"
+  },
+  "prefooter": {
+    "goToContactBtn": "Contact me"
+  },
+  "footer": {
+    "sayHello": "Say Hello",
+    "sendEmail": "Text Me!",
+    "linkdln": "Find me on",
+    "siteInfo": "Coded in Visual Studio Code by yours truly. Built with Next.js and Tailwind CSS, deployed with Vercel."
+  }
+}

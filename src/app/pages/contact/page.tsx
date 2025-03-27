@@ -2,8 +2,10 @@
 import ContactForm from "@/app/component/ContactForm";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function ContactPage() {
+  const { t } = useTranslation();
   const [isLoaded, setIsLoaded] = useState<boolean>(false);
 
   useEffect(() => {
@@ -18,7 +20,7 @@ export default function ContactPage() {
       exit={{ opacity: 0 }}
       transition={{ duration: 0.3 }}
     >
-      <h1 className="text-3xl font-bold pl-6 pt-10">Contact Me.</h1>
+      <h1 className="text-3xl font-bold pl-6 pt-10">{t("contact.title")}</h1>
       <ContactForm />
     </motion.section>
   );

@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "homepage": "Homepage",
+    "about": "Su di me",
+    "contact": "Contatti"
+  },
+  "homepage": {
+    "job": "Sviluppatrice Frontend.",
+    "presentation": "Sono una sviluppatrice front-end appassionata di tutto ciò che orbita il mondo scientifico e informatico. Mi occupo di siti web e-commerce, nel settore luxury and fashion e  beauty and cosmetics.",
+    "strengths": "Punti di forza",
+    "card": {
+      "card1": "Algoritmi",
+      "card2": "Sviluppo",
+      "card3": "Accessibilità",
+      "card4": "Studio"
+    },
+    "description": "Mantengo e implemento soluzioni e architetture web front-end, attraverso la scrittura di algoritmi ottimali e codice pulito, per garantire le funzionalità del sito web. Mi occupo delle performance del sito e dell'accessibilità web. Ho un forte interesse per l'intelligenza artificiale sulla quale mi tengo aggiornata per continuare ad apprendere nuove tecnologie con un orientamento al futuro.",
+    "goToAboutBtn": "Scopri di più"
+  },
+  "contact": {
+    "title": "Contattami.",
+    "name": "Nome",
+    "email": "Email",
+    "message": "Messaggio",
+    "sendMessage": "Invia",
+    "sent": "Il messaggio è stato inviato. Grazie!",
+    "notSent": "Il messaggio non puù essere inviato.",
+    "genericError": "Error sending message."
+  },
+  "about": {
+    "title": "Su di me.",
+    "paragraph": "Sono una sviluppatrice frontend con sede a Milano, Italia. Mi piace trasformare problemi complessi in semplici attraverso la logica e il ragionamento. Dal 2021 ho scoperto la mia passione per lo sviluppo web.",
+    "boldParagraph": " Ora faccio il lavoro che amo.",
+    "student": "Studente",
+    "studentParagraph": "Lo studio è essenziale e parte integrante del mio lavoro. Amo studiare e imparare cose nuove attraverso le quali cerco nuovi spunti e un continuo miglioramento personale.",
+    "personalProjects": "Progetti personali",
+    "university": "Università",
+    "books": "Libri & Documentazione",
+    "curiosity": "Curiosità",
+    "geek": "Geek",
+    "coder": "Programmatrice",
+    "coderParagraph": "Il coding fa parte della mia vita quotidiana, attraverso questo metto in pratica ciò che studio. Programmare non è solo un lavoro, ti permette di apprendere un modo di pensare che semplifica la vita di tutti i giorni.",
+    "html": "HTML / CSS",
+    "css": "Bootstrap / Tailwind CSS",
+    "js": "Bootstrap / Tailwind CSS",
+    "a11y": "Web Accessibility",
+    "next": "Next.js",
+    "react": "React JS"
+  },
+  "prefooter": {
+    "goToContactBtn": "Contattami"
+  },
+  "footer": {
+    "sayHello": "Say Hello",
+    "sendEmail": "Mandami un'email!",
+    "linkdln": "Trovami su",
+    "siteInfo": "Sviluppato con Visual Studio Code. Costruito con Next.js e Tailwind CSS, distribuito con Vercel."
+  }
+}

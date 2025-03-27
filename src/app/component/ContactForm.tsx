@@ -1,8 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function ContactForm() {
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -30,19 +32,19 @@ export default function ContactForm() {
 
       if (response.ok) {
         setFormData({ name: "", email: "", message: "" });
-        setStatus("The message has been sent. Thank you!");
+        setStatus(t("contact.sent"));
       } else {
-        setError("The message cannot be sent.");
+        setError(t("contact.notSent"));
       }
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (error) {
-      setError("Error sending message.");
+      setError(t("contact.genericError"));
     }
   };
 
   return (
     <form onSubmit={handleSubmit} className="max-w-md mx-auto p-6">
-      <label>Name</label>
+      <label>{t("contact.name")}</label>
       <input
         type="text"
         name="name"
@@ -52,7 +54,7 @@ export default function ContactForm() {
         className="input"
       />
 
-      <label>Email</label>
+      <label>{t("contact.email")}</label>
       <input
         type="email"
         name="email"
@@ -62,7 +64,7 @@ export default function ContactForm() {
         className="input"
       />
 
-      <label>Message</label>
+      <label>{t("contact.message")}</label>
       <textarea
         name="message"
         value={formData.message}
@@ -73,7 +75,7 @@ export default function ContactForm() {
       />
 
       <button type="submit" className="btn">
-        Send Message
+        {t("contact.sendMessage")}
       </button>
 
       {error && (

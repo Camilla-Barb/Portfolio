@@ -48,16 +48,6 @@ export default function Homepage() {
               : "opacity-0"
           } max-md:bg-[url(/img/bg-mobile.png)] md:bg-[url(/img/bg-desktop.png)] w-full bg-no-repeat bg-cover bg-bottom max-md:min-h-[350px] min-h-[500px] md:bg-center xl:p-20`}
         >
-          {/* <svg
-            className="max-sm:hidden block absolute bottom-0 w-full"
-            stroke="none"
-            viewBox="0 0 1440 320"
-          >
-            <path
-              fill="white"
-              d="M0,288 C480,160 960,160 1440,288 L1440,400 L0,400 Z"
-            ></path>
-          </svg> */}
           <article className="hero-section absolute shadow-yellow-950 w-max bg-white p-2 pl-5 pr-10 pt-3 md:pr-32 md:pt-5 md:pb-5 left-0 bottom-5 md:top-20 md:bottom-auto xl:top-10 xl:relative xl:p-20  z-50">
             <div className="hero-text-container before:content-[''] before:block before:w-1/3 before:h-[4px] before:bg-coffee before:mb-2 z-2">
               <h1 className="font-bold text-xl md:text-2xl xl:pb-2">
@@ -71,11 +61,7 @@ export default function Homepage() {
       {/* paragraph section */}
       <section className="p-8 md:p-16">
         <article>
-          <p className="text-center">
-            I am a front-end developer interested in everything that orbits the
-            scientific and IT world. I am working in retail projects of
-            different brands, from luxury and fashion to beauty and cosmetics.
-          </p>
+          <p className="text-center">{t("homepage.presentation")}</p>
         </article>
       </section>
       {/* cards section */}
@@ -137,16 +123,9 @@ export default function Homepage() {
           <div className="absolute inset-0 bg-gradient-to-t from-yellow-950/30 to-transparent"></div>
         </figure>
         <article className="flex flex-col gap-8 justify-center text-center md:p-10 w-full">
-          <p>
-            I maintain and implement front end web solutions and architectures,
-            through the writing of optimal algorithms and clean code, to
-            guarantee the website functionalities. I take care of the website
-            performance and web accessibility. I had a strong interest on the
-            Generative AI on which I keep myself updated to learn new
-            technologies.
-          </p>
+          <p>{t("homepage.description")}</p>
           <button onClick={() => setGoToAboutPage(true)} className="btn">
-            Find out more
+            {t("homepage.goToAboutBtn")}
           </button>
         </article>
       </section>
