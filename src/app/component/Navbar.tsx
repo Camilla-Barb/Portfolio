@@ -7,6 +7,7 @@ import Image from "next/image";
 import { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Modal from "./Modal";
+import LanguagesSelect from "./LanguagesSelect";
 import i18n from "../utils/translation";
 import { useTranslation } from "react-i18next";
 
@@ -146,56 +147,7 @@ export default function Navbar() {
             <Link href="/pages/contact" className="p-8" prefetch={true}>
               {t("nav.contact")}
             </Link>
-            {/* <div className="languages-combobox">
-              <div id="combo-label" className="combo-label sr-only">
-                List of languages
-              </div>
-              <div
-                aria-controls="listbox1"
-                aria-expanded="false"
-                aria-haspopup="listbox"
-                aria-labelledby="combo-label"
-                role="combobox"
-                id="combo1"
-                className="combo-input"
-                aria-activedescendant=""
-                tabIndex={0}
-              >
-                Choose a language
-                <div
-                  className="combo-menu"
-                  role="listbox"
-                  id="listbox1"
-                  aria-labelledby="combo-label"
-                  tabIndex={-1}
-                >
-                  <div
-                    role="option"
-                    id="combo1-0"
-                    className="combo-option option-current"
-                    aria-selected="true"
-                  >
-                    Choose a Fruit
-                  </div>
-                  <div
-                    role="option"
-                    id="combo1-1"
-                    className="combo-option"
-                    aria-selected="false"
-                  >
-                    EN
-                  </div>
-                  <div
-                    role="option"
-                    id="combo1-2"
-                    className="combo-option"
-                    aria-selected="false"
-                  >
-                    IT
-                  </div>
-                </div>
-              </div>
-            </div> */}
+            <LanguagesSelect />
           </div>
         </div>
       )}
