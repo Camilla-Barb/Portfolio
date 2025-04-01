@@ -3,6 +3,7 @@ import useBreakpoint from "../hooks/useBreakpoint";
 import { Bars3Icon } from "@heroicons/react/16/solid";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Modal from "./Modal";
@@ -90,22 +91,40 @@ export default function Navbar() {
                 </Link>
               </li>
             </ul>
-            <div className="languages flex gap-8">
+            <div className="languages flex justify-end gap-8 absolute bottom-16 right-8">
               <button
+                className="btn min-w-12 flex gap-2"
+                aria-label={t("A11y.translateEN")}
                 onClick={() => {
                   i18n.changeLanguage("en");
                   setIsModalOpen(false);
                 }}
               >
-                en
+                EN
+                <Image
+                  src="/img/united-kingdom.png"
+                  width={20}
+                  height={16}
+                  alt=""
+                  aria-hidden
+                />
               </button>
               <button
+                className="btn min-w-12 flex gap-2"
+                aria-label={t("A11y.translateIT")}
                 onClick={() => {
                   i18n.changeLanguage("it");
                   setIsModalOpen(false);
                 }}
               >
-                it
+                IT
+                <Image
+                  src="/img/italy.png"
+                  width={20}
+                  height={16}
+                  alt=""
+                  aria-hidden
+                />
               </button>
             </div>
           </Modal>
@@ -127,6 +146,56 @@ export default function Navbar() {
             <Link href="/pages/contact" className="p-8" prefetch={true}>
               {t("nav.contact")}
             </Link>
+            {/* <div className="languages-combobox">
+              <div id="combo-label" className="combo-label sr-only">
+                List of languages
+              </div>
+              <div
+                aria-controls="listbox1"
+                aria-expanded="false"
+                aria-haspopup="listbox"
+                aria-labelledby="combo-label"
+                role="combobox"
+                id="combo1"
+                className="combo-input"
+                aria-activedescendant=""
+                tabIndex={0}
+              >
+                Choose a language
+                <div
+                  className="combo-menu"
+                  role="listbox"
+                  id="listbox1"
+                  aria-labelledby="combo-label"
+                  tabIndex={-1}
+                >
+                  <div
+                    role="option"
+                    id="combo1-0"
+                    className="combo-option option-current"
+                    aria-selected="true"
+                  >
+                    Choose a Fruit
+                  </div>
+                  <div
+                    role="option"
+                    id="combo1-1"
+                    className="combo-option"
+                    aria-selected="false"
+                  >
+                    EN
+                  </div>
+                  <div
+                    role="option"
+                    id="combo1-2"
+                    className="combo-option"
+                    aria-selected="false"
+                  >
+                    IT
+                  </div>
+                </div>
+              </div>
+            </div> */}
           </div>
         </div>
       )}

@@ -55,5 +55,15 @@
     "sendEmail": "Mandami un'email!",
     "linkdln": "Trovami su",
     "siteInfo": "Sviluppato con Visual Studio Code. Costruito con Next.js e Tailwind CSS, distribuito con Vercel."
+  },
+  "card": {
+    "algorithms": "Algoritmi",
+    "development": "Sviluppo",
+    "a11y": "Accessibilità",
+    "study": "Studio"
+  },
+  "A11y": {
+    "translateIT": "Traduci in Italiano",
+    "translateEN": "Traduci in Inglese"
   }
 }

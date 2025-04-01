@@ -83,25 +83,25 @@ export default function Homepage() {
           >
             <SwiperSlide>
               <Card
-                title="Algorithms"
+                title={t("card.algorithms")}
                 icon={<LightBulbIcon width={30} height={30} aria-hidden />}
               />
             </SwiperSlide>
             <SwiperSlide>
               <Card
-                title="Development"
+                title={t("card.development")}
                 icon={<TvIcon width={30} height={30} aria-hidden />}
               />
             </SwiperSlide>
             <SwiperSlide>
               <Card
-                title="Accessibility"
+                title={t("card.a11y")}
                 icon={<CheckCircleIcon width={30} height={30} aria-hidden />}
               />
             </SwiperSlide>
             <SwiperSlide>
               <Card
-                title="Study"
+                title={t("card.study")}
                 icon={<BookOpenIcon width={30} height={30} aria-hidden />}
               />
             </SwiperSlide>

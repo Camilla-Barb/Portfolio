@@ -1,7 +1,7 @@
 {
   "nav": {
-    "homepage": "homepage",
-    "about": "about",
+    "homepage": "Homepage",
+    "about": "About",
     "contact": "Contact"
   },
   "homepage": {
@@ -55,5 +55,15 @@
     "sendEmail": "Text Me!",
     "linkdln": "Find me on",
     "siteInfo": "Coded in Visual Studio Code by yours truly. Built with Next.js and Tailwind CSS, deployed with Vercel."
+  },
+  "card": {
+    "algorithms": "Algorithms",
+    "development": "Development",
+    "a11y": "Accessibility",
+    "study": "Study"
+  },
+  "A11y": {
+    "translateIT": "Translate in Italian",
+    "translateEN": "Translate in English"
   }
 }
