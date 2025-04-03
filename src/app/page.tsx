@@ -66,7 +66,7 @@ export default function Homepage() {
       </section>
       {/* cards section */}
       <section className="text-xl pt-2 pb-5 md:p-10 md:pt-4 w-full bg-yellow-900/10">
-        <h2 className="text-center font-bold p-3">Strengths</h2>
+        <h2 className="text-center font-bold p-3">{t("homepage.strengths")}</h2>
         <div className="section-container w-full">
           <Swiper
             slidesPerView="auto"
