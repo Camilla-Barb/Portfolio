@@ -7,7 +7,7 @@ import Image from "next/image";
 import { useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import Modal from "./Modal";
-import LanguagesSelect from "./LanguagesSelect";
+// import { LanguagesSelect } from "./LanguagesSelect";
 import i18n from "../utils/translation";
 import { useTranslation } from "react-i18next";
 
@@ -15,6 +15,7 @@ export default function Navbar() {
   const breakpoint = useBreakpoint();
   const menuMobile = useRef<HTMLUListElement>(null);
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  // const [language, setLanguage] = useState<"en" | "it">("en");
   const { t } = useTranslation();
   const router = useRouter();
 
@@ -147,7 +148,7 @@ export default function Navbar() {
             <Link href="/pages/contact" className="p-8" prefetch={true}>
               {t("nav.contact")}
             </Link>
-            <LanguagesSelect />
+            {/* <LanguagesSelect value={language} onChange={setLanguage} /> */}
           </div>
         </div>
       )}

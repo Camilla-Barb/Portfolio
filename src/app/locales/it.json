@@ -65,5 +65,11 @@
   "A11y": {
     "translateIT": "Traduci in Italiano",
     "translateEN": "Traduci in Inglese"
+  },
+  "error": {
+    "title": "Ops! Qualcosa è andato storto",
+    "paragraph": "Si è verificato un errore imprevisto. Si prega di riprovare.",
+    "retry": " Riprova",
+    "home": "Torna alla Homepage"
   }
 }

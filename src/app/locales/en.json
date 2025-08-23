@@ -65,5 +65,11 @@
   "A11y": {
     "translateIT": "Translate in Italian",
     "translateEN": "Translate in English"
+  },
+  "error": {
+    "title": "Ops! Something went wrong",
+    "paragraph": "An unexpected error occurred. Please try again.",
+    "retry": " Retry",
+    "home": "Go Home"
   }
 }
