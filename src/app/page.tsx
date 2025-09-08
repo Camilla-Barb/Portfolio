@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
 import Card from "./component/Card";
 import {
   TvIcon,
@@ -12,24 +11,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
+import About from "./component/About";
+import Contact from "./component/Contact";
 
 export default function Homepage() {
   const [imageLoaded, setImageLoaded] = useState<boolean>(false);
-  const [goToAboutPage, setGoToAboutPage] = useState<boolean>(false);
   const { t } = useTranslation();
-  const router = useRouter();
 
   useEffect(() => {
     const bgImage = new window.Image();
     bgImage.src = "/img/hero-bg.png";
     bgImage.onload = () => setImageLoaded(true);
   }, []);
-
-  useEffect(() => {
-    if (goToAboutPage) {
-      router.replace("pages/about");
-    }
-  }, [router, goToAboutPage]);
 
   return (
     <div className="bg-white relative text-coffee font-[family-name:var(--font-geist-sans)] w-full">
@@ -48,7 +41,20 @@ export default function Homepage() {
               : "opacity-0"
           } max-md:bg-[url(/img/bg-mobile.png)] md:bg-[url(/img/bg-desktop.png)] w-full bg-no-repeat bg-cover bg-bottom max-md:min-h-[350px] min-h-[500px] md:bg-center xl:p-20`}
         >
-          <article className="hero-section absolute shadow-yellow-950 w-max bg-white p-2 pl-5 pr-10 pt-3 md:pr-32 md:pt-5 md:pb-5 left-0 bottom-5 md:top-20 md:bottom-auto xl:top-10 xl:relative xl:p-20  z-50">
+          <article className="hero-section absolute shadow-yellow-950 sm:w-max bg-white p-2 pl-5 pr-10 pt-3 md:pr-32 md:pt-5 md:pb-5 left-0 bottom-5 md:top-20 md:bottom-auto xl:top-10 xl:relative xl:p-20  z-50 flex items-center gap-10">
+            <div className="relative flex items-center justify-center">
+              <div className="absolute max-md:w-28 max-md:h-28 w-40 h-40 bg-yellow-900/10 rounded-full z-0"></div>
+              <figure>
+                <Image
+                  src="/img/me.png"
+                  alt="Camilla Barbieri"
+                  className="relative z-10 max-md:w-20 max-md:h-24 w-32 h-36 rounded-full object-cover"
+                  width={200}
+                  height={200}
+                />
+              </figure>
+            </div>
+
             <div className="hero-text-container before:content-[''] before:block before:w-1/3 before:h-[4px] before:bg-coffee before:mb-2 z-2">
               <h1 className="font-bold text-xl md:text-2xl xl:pb-2">
                 {t("homepage.job")}
@@ -124,11 +130,20 @@ export default function Homepage() {
         </figure>
         <article className="flex flex-col gap-8 justify-center text-center md:p-10 w-full">
           <p>{t("homepage.description")}</p>
-          <button onClick={() => setGoToAboutPage(true)} className="btn">
+          <button
+            onClick={() =>
+              document
+                .getElementById("about")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
+            className="btn"
+          >
             {t("homepage.goToAboutBtn")}
           </button>
         </article>
       </section>
+      <About />
+      <Contact />
     </div>
   );
 }
