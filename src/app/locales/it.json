@@ -2,6 +2,7 @@
   "nav": {
     "homepage": "Homepage",
     "about": "Su di me",
+    "project": "Progetti",
     "contact": "Contatti"
   },
   "homepage": {
@@ -18,7 +19,7 @@
     "goToAboutBtn": "Scopri di più"
   },
   "contact": {
-    "title": "Contattami.",
+    "title": "Contattami",
     "name": "Nome",
     "email": "Email",
     "message": "Messaggio",
@@ -28,7 +29,7 @@
     "genericError": "Error sending message."
   },
   "about": {
-    "title": "Su di me.",
+    "title": "Su di me",
     "paragraph": "Sono una sviluppatrice frontend con sede a Milano, Italia. Mi piace trasformare problemi complessi in semplici attraverso la logica e il ragionamento. Dal 2021 ho scoperto la mia passione per lo sviluppo web.",
     "boldParagraph": " Ora faccio il lavoro che amo.",
     "student": "Studente",
@@ -43,7 +44,7 @@
     "html": "HTML / CSS",
     "css": "Bootstrap / Tailwind CSS",
     "js": "JavaScript / TypeScript / C",
-    "a11y": "Web Accessibility",
+    "a11y": "Accessibilità Web",
     "next": "Next.js",
     "react": "React JS"
   },
@@ -62,8 +63,23 @@
     "a11y": "Accessibilità",
     "study": "Studio"
   },
+  "project": {
+    "title": "Progetti su cui ho lavorato...",
+    "luxuryBrand": "E-commerce di lusso",
+    "luxuryBrandDesc": "I worked on a luxury e-commerce fashion website for two years (a luxury fashion brand) allowed me to learn a lot in technical terms, using Salesforce Commerce Cloud as CRM system and React JS and TypeScript as technologies. The demand for continuous maintenance and new improvements enabled me to develop my skills in requirements analysis and understanding customer needs. I also developed logical thinking skills and learned how widely used technologies work. The required quality was very high, leading to meticulous attention to detail and continuous testing after development. Teamwork was also essential, with continuous updates and daily alignment on our activities. The willingness of each team member to learn and grow, as well as the great mutual respect we had for each other, definitely made us an excellent team.",
+    "cosmeticBrand": "E-commerce di cosmetica e bellezza",
+    "cosmeticBrandDesc": "I'm working on a famous cosmetic e-commerce. Here, I had the opportunity to learn new technologies such as Next.Js and a cleaner and more streamlined deployment system using Vercel. I am continuing to use React with Typescript, but I have discovered a more modern and innovative way of working.",
+    "a11y": "Accessibilità",
+    "a11yDesc": "On some other projects, I am personally responsible for Web Accessibility. I perform audits in which I analyze all accessibility bugs and identify problems and possible solutions, in agreement with the development team and following the WCAG 2.2."
+  },
   "A11y": {
     "translateIT": "Traduci in Italiano",
     "translateEN": "Traduci in Inglese"
+  },
+  "error": {
+    "title": "Ops! Qualcosa è andato storto",
+    "paragraph": "Si è verificato un errore imprevisto. Si prega di riprovare.",
+    "retry": " Riprova",
+    "home": "Torna alla Homepage"
   }
 }
