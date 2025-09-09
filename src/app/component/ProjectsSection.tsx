@@ -24,13 +24,13 @@ export default function ProjectsSection() {
             />
           </div>
         </figure>
-        <article className="flex flex-col order-1 md:order-2 md:w-1/2 gap-8 justify-center text-center md:p-10 w-full">
+        <article className="flex flex-col order-1 md:order-2 md:w-1/2 gap-8 justify-start text-center md:p-10 w-full">
           <h3 className="font-bold">{t("project.luxuryBrand")}</h3>
           <p>{t("project.luxuryBrandDesc")}</p>
         </article>
       </section>
       <section className="flex flex-col md:flex-row p-8 gap-10 bg-white w-full min-h-[600px] h-full">
-        <article className="flex flex-col order-1 md:order-1 md:w-1/2 gap-8 justify-center text-center md:p-10 w-full">
+        <article className="flex flex-col order-1 md:order-1 md:w-1/2 gap-8 justify-start text-center md:p-10 w-full">
           <h3 className="font-bold">{t("project.cosmeticBrand")}</h3>
           <p>{t("project.cosmeticBrandDesc")}</p>
         </article>
@@ -62,7 +62,7 @@ export default function ProjectsSection() {
             />
           </div>
         </figure>
-        <article className="flex flex-col order-1 md:order-2 md:w-1/2 gap-8 justify-center text-center md:p-10 w-full">
+        <article className="flex flex-col order-1 md:order-2 md:w-1/2 gap-8 justify-start text-center md:p-10 w-full">
           <h3 className="font-bold">{t("project.a11y")}</h3>
           <p>{t("project.a11yDesc")}</p>
         </article>
