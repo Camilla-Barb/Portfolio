@@ -44,28 +44,33 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="max-w-md mx-auto p-6">
-      <label>{t("contact.name")}</label>
+      <label htmlFor="name">{t("contact.name")}</label>
       <input
+        id="name"
         type="text"
         name="name"
         value={formData.name}
         onChange={handleChange}
         required
+        autoComplete="given-name"
         className="input"
       />
 
-      <label>{t("contact.email")}</label>
+      <label htmlFor="email">{t("contact.email")}</label>
       <input
+        id="email"
         type="email"
         name="email"
         value={formData.email}
         onChange={handleChange}
         required
+        autoComplete="off"
         className="input"
       />
 
-      <label>{t("contact.message")}</label>
+      <label htmlFor="text-message">{t("contact.message")}</label>
       <textarea
+        id="text-message"
         name="message"
         value={formData.message}
         onChange={handleChange}
@@ -74,7 +79,7 @@ export default function ContactForm() {
         rows={4}
       />
 
-      <button type="submit" className="btn">
+      <button type="submit" className="btn text-xl">
         {t("contact.sendMessage")}
       </button>
 

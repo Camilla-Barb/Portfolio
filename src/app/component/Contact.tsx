@@ -21,9 +21,7 @@ export default function ContactPage() {
       transition={{ duration: 0.3 }}
       id="contact"
     >
-      <h2 className="text-3xl font-bold pb-10 text-center">
-        {t("contact.title")}
-      </h2>
+      <h2 className="text-3xl font-bold text-center">{t("contact.title")}</h2>
       <ContactForm />
     </motion.section>
   );

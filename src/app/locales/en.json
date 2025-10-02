@@ -3,11 +3,12 @@
     "homepage": "Homepage",
     "about": "About",
     "project": "Projects",
+    "skills": "Skills",
     "contact": "Contact"
   },
   "homepage": {
-    "job": "Frontend Developer.",
-    "presentation": "I am a front-end developer interested in everything that orbits the scientific and IT world. I am working in retail projects of different brands, from luxury and fashion to beauty and cosmetics.",
+    "job": "Frontend Developer",
+    "presentation": "I’m a Front-end Developer with 3+ years of experience building enterprise-level e-commerce platforms for international brands. Expert in React, Next.js and TypeScript, with strong skills in Web Accessibility.",
     "strengths": "My strengths",
     "card": {
       "card1": "Algorithms",
@@ -42,6 +43,7 @@
     "coder": "Coder",
     "coderParagraph": " Coding is part of my daily life, through this I put into practice what I study. Programming is not just a job, it allows you to learn a way of thinking that makes everyday life easier.",
     "html": "HTML / CSS",
+    "git": "Visual Studio Code / Git / Bitbucket ",
     "css": "Bootstrap / Tailwind CSS",
     "js": "JavaScript / TypeScript / C",
     "a11y": "Web Accessibility",

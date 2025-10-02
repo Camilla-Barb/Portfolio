@@ -84,6 +84,18 @@ export default function Navbar() {
               </li>
               <li className="p-8">
                 <Link
+                  href="#skills"
+                  onClick={() => {
+                    setIsModalOpen(false);
+                  }}
+                  aria-label="Skills"
+                  prefetch={true}
+                >
+                  {t("nav.skills")}
+                </Link>
+              </li>
+              <li className="p-8">
+                <Link
                   href="#contact"
                   onClick={() => {
                     setIsModalOpen(false);
@@ -149,6 +161,9 @@ export default function Navbar() {
             </Link>
             <Link href="#project" className="p-5">
               {t("nav.project")}
+            </Link>
+            <Link href="#skills" className="p-5">
+              {t("nav.skills")}
             </Link>
             <Link href="#contact" className="p-5">
               {t("nav.contact")}

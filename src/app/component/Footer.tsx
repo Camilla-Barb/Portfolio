@@ -37,12 +37,22 @@ export default function Footer() {
             </Link>
           </li>
           <li>
-            <Link href="/pages/about" prefetch={true}>
+            <Link href="#about" prefetch={true}>
               {t("nav.about")}
             </Link>
           </li>
           <li>
-            <Link href="/pages/contact" prefetch={true}>
+            <Link href="#project" prefetch={true}>
+              {t("nav.project")}
+            </Link>
+          </li>
+          <li>
+            <Link href="#skills" prefetch={true}>
+              {t("nav.skills")}
+            </Link>
+          </li>
+          <li>
+            <Link href="#contact" prefetch={true}>
               {t("nav.contact")}
             </Link>
           </li>

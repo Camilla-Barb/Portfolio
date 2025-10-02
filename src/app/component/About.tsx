@@ -4,6 +4,7 @@ import Image from "next/image";
 import ProjectsSection from "@/app/component/ProjectsSection";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import SkillsSection from "./SkillsSection";
 
 export default function About() {
   const { t } = useTranslation();
@@ -46,29 +47,30 @@ export default function About() {
           <div className="w-full">
             <h3 className="font-bold pb-2 text-xl">{t("about.student")}</h3>
             <p className="pt-6 pb-6 p-4">{t("about.studentParagraph")}</p>
-            <ul className="p-4">
+            {/* <ul className="p-4">
               <li>{t("about.personalProjects")}</li>
               <li>{t("about.university")}</li>
               <li>{t("about.books")}</li>
               <li>{t("about.curiosity")}</li>
               <li>{t("about.geek")}</li>
-            </ul>
+            </ul> */}
           </div>
           <div className="max-lg:pt-16 w-full">
             <h3 className="font-bold pb-2 text-xl">{t("about.coder")}</h3>
             <p className="pt-6 pb-6 p-4">{t("about.coderParagraph")}</p>
-            <ul className="p-4">
+            {/* <ul className="p-4">
               <li>{t("about.html")}</li>
               <li>{t("about.css")}</li>
               <li>{t("about.js")}</li>
               <li>{t("about.a11y")}</li>
               <li>{t("about.next")}</li>
               <li>{t("about.react")}</li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </section>
       <ProjectsSection />
+      <SkillsSection />
     </motion.div>
   );
 }
