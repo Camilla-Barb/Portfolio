@@ -45,7 +45,6 @@ export default function Homepage() {
     <div className="bg-white relative text-coffee font-[family-name:var(--font-geist-sans)] w-full">
       {showArrow && (
         <button
-          rel="backToTopBtn"
           className="back-to-top fixed cursor-pointer z-50 right-4 bottom-4 p-3 pl-5 pr-5 bg-[#4b290e] text-white font-bold text-xl white shadow-2xl rounded-full"
           onClick={() => {
             window.scrollTo({
@@ -58,7 +57,6 @@ export default function Homepage() {
           ↑
         </button>
       )}
-
       {/* hero section */}
       <section
         className={`${
