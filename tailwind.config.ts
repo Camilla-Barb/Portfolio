@@ -16,7 +16,6 @@ export default {
         white: "var(--white)",
         cappuccino: "var(--cappuccino)",
         coffee: "var(--coffee)",
-        indigo: "var(--indigo)",
       },
     },
   },

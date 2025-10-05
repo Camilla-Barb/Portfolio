@@ -7,7 +7,7 @@ export default function ProjectsSection() {
   const { t } = useTranslation();
   return (
     <div id="project">
-      <h2 className="text-2xl font-bold pb-10 pt-10 pl-10 text-center">
+      <h2 className="text-2xl font-bold pb-10 pt-10 text-center">
         {t("project.title")}
       </h2>
       <section className="flex flex-col md:flex-row p-8 gap-10 bg-white w-full min-h-[600px] h-full">

@@ -21,8 +21,8 @@ export default function Navbar() {
     <>
       {breakpoint === "mobile" && (
         //hamburger menu
-        <div className="mobile-menu font-bold bg-white min-h-10">
-          <div className="flex items-center justify-between p-5">
+        <div className="mobile-menu font-bold bg-white min-h-10 fixed top-0 left-0 w-full z-50 shadow-md">
+          <div className="flex items-center justify-between p-3">
             <Link href="/" className="pl-2 font-italic" prefetch={true}>
               <Image src="/img/logo.png" width={50} height={50} alt="logo" />
             </Link>
@@ -47,7 +47,7 @@ export default function Navbar() {
                   : "-translate-x-full opacity-0"
               }`}
             >
-              <li className="p-8">
+              <li className="p-4">
                 <Link
                   href="/"
                   onClick={() => {
@@ -59,7 +59,7 @@ export default function Navbar() {
                   {t("nav.homepage")}
                 </Link>
               </li>
-              <li className="p-8">
+              <li className="p-4">
                 <Link
                   href="#about"
                   onClick={() => {
@@ -70,7 +70,7 @@ export default function Navbar() {
                   {t("nav.about")}
                 </Link>
               </li>
-              <li className="p-8">
+              <li className="p-4">
                 <Link
                   href="#project"
                   onClick={() => {
@@ -82,7 +82,7 @@ export default function Navbar() {
                   {t("nav.project")}
                 </Link>
               </li>
-              <li className="p-8">
+              <li className="p-4">
                 <Link
                   href="#skills"
                   onClick={() => {
@@ -94,7 +94,7 @@ export default function Navbar() {
                   {t("nav.skills")}
                 </Link>
               </li>
-              <li className="p-8">
+              <li className="p-4">
                 <Link
                   href="#contact"
                   onClick={() => {
@@ -148,11 +148,11 @@ export default function Navbar() {
       )}
 
       {breakpoint === "desktop" && (
-        <div className="bg-white font-bold flex items-center justify-between w-full">
+        <div className="bg-white font-bold flex items-center justify-between w-full fixed top-0 left-0 z-50 shadow-md">
           <Link href="/" className="pl-10 font-italic" prefetch={true}>
             <Image src="/img/logo.png" width={50} height={50} alt="logo" />
           </Link>
-          <div className="flex pr-20 gap-2 items-center justify-end font-bold">
+          <div className="flex pr-10 gap-2 items-center justify-end font-bold">
             <Link href="/" className="p-5" prefetch={true}>
               {t("nav.homepage")}
             </Link>

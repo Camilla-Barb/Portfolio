@@ -17,6 +17,7 @@ import Contact from "./component/Contact";
 export default function Homepage() {
   const [imageLoaded, setImageLoaded] = useState<boolean>(false);
   const { t } = useTranslation();
+  const [showArrow, setShowArrow] = useState(false);
 
   useEffect(() => {
     const bgImage = new window.Image();
@@ -24,8 +25,40 @@ export default function Homepage() {
     bgImage.onload = () => setImageLoaded(true);
   }, []);
 
+  const handleScroll = () => {
+    if (window.scrollY > 350) {
+      setShowArrow(true);
+    } else {
+      setShowArrow(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="bg-white relative text-coffee font-[family-name:var(--font-geist-sans)] w-full">
+      {showArrow && (
+        <button
+          rel="backToTopBtn"
+          className="back-to-top fixed cursor-pointer z-50 right-4 bottom-4 p-3 pl-5 pr-5 bg-[#4b290e] text-white font-bold text-xl white shadow-2xl rounded-full"
+          onClick={() => {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          }}
+          aria-label={t("A11y.swipeup")}
+        >
+          ↑
+        </button>
+      )}
+
       {/* hero section */}
       <section
         className={`${
@@ -39,9 +72,9 @@ export default function Homepage() {
             imageLoaded
               ? " opacity-90 transition-opacity duration-500"
               : "opacity-0"
-          } max-md:bg-[url(/img/bg-mobile.png)] md:bg-[url(/img/bg-desktop.png)] w-full bg-no-repeat bg-cover bg-bottom max-md:min-h-[350px] min-h-[500px] md:bg-center xl:p-20`}
+          } max-md:bg-[url(/img/bg-mobile1.png)] md:bg-[url(/img/bg-desktop1.png)] w-full bg-no-repeat bg-cover bg-bottom max-md:min-h-[350px] min-h-[500px] md:bg-center xl:p-20 flex items-center justify-center max-md:pt-[74px] lg:pt-[84px] xl:pt-[134px]`}
         >
-          <article className="hero-section absolute shadow-yellow-950 sm:w-max bg-white p-2 pl-5 pr-10 pt-3 md:pr-32 md:pt-5 md:pb-5 left-0 bottom-5 md:top-20 md:bottom-auto xl:top-10 xl:relative xl:p-20  z-50 flex items-center gap-10">
+          <article className="hero-section shadow-yellow-950 w-max h-min p-10 md:p-20 z-50 flex items-center gap-10">
             <div className="relative flex items-center justify-center">
               <div className="absolute max-md:w-28 max-md:h-28 w-40 h-40 bg-yellow-900/10 rounded-full z-0"></div>
               <figure>

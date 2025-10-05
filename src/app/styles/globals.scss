@@ -6,7 +6,6 @@
   // --coffee: #693f26;
   --coffee: #422006;
   --cappuccino: #886d63;
-  --indigo: #4b0082;
 }
 
 *,
@@ -46,6 +45,14 @@ body {
 
 .input {
   @apply w-full p-2 border border-gray-300 rounded mb-4;
+}
+
+.hero-section {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.27);
 }
 
 .skills-section {
@@ -93,7 +100,7 @@ body {
 
 * {
   &:focus-visible {
-    outline: 2px solid indigo;
+    outline: 2px solid var(--coffee);
   }
   &:focus {
     border: none;
@@ -113,6 +120,7 @@ body {
   border-width: 0;
 }
 
+// skills box animation
 @keyframes bounce {
   0% {
     transform: translateY(0);
