@@ -107,7 +107,7 @@ export default function Navbar() {
                 </Link>
               </li>
             </ul>
-            <div className="languages flex justify-end gap-8 absolute bottom-16 right-8">
+            <div className="languages justify-end gap-8 absolute bottom-16 right-8 hidden">
               <button
                 className="btn min-w-12 flex gap-2"
                 aria-label={t("A11y.translateEN")}
