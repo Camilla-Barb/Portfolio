@@ -79,7 +79,7 @@ export default function ContactForm() {
         rows={4}
       />
 
-      <button type="submit" className="btn text-xl">
+      <button type="submit" className="btn text-lg">
         {t("contact.sendMessage")}
       </button>
 

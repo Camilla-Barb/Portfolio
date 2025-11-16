@@ -14,7 +14,7 @@
       "card1": "Algorithms",
       "card2": "Development",
       "card3": "Accessibility",
-      "card4": "Study"
+      "card4": "Learn"
     },
     "description": "I maintain and implement front end web solutions and architectures, through the writing of optimal algorithms and clean code, to guarantee the website functionalities. I take care of the website performance and web accessibility. I had a strong interest on the Generative AI on which I keep myself updated to learn new technologies.",
     "goToAboutBtn": "Find out more"
@@ -31,24 +31,16 @@
   },
   "about": {
     "title": "About",
-    "paragraph": "I am a Frontend Developer based in Milan, Italy. I have enjoyed turning complex problems into simple, through logic and reasoning. Since 2021 I discovered my passion for web development.",
+    "paragraph": "I am a Frontend Developer based in Italy. I have enjoyed turning complex problems into simple, through logic and reasoning. Since 2021 I discovered my passion for web development.",
     "boldParagraph": " Now I do the job I love.",
-    "student": "Self-Learner",
-    "studentParagraph": "Studying is essential and an integral part of my work. I love studying and learning new things through which I look for new ideas and a continuous personal improvement.",
-    "personalProjects": "Personal projects",
-    "university": "University",
-    "books": "Books & Documentation",
-    "curiosity": "Curiosity attitude",
-    "geek": "Geek",
+    "learner": "Learner",
+    "learnerParagraph": "I consider myself someone who is always eager to learn. This is an essential part of my job and enables me to pick things up quickly. I love studying and exploring new subjects, as it helps me generate new ideas and continuously improve myself.",
     "coder": "Coder",
-    "coderParagraph": " Coding is part of my daily life, through this I put into practice what I study. Programming is not just a job, it allows you to learn a way of thinking that makes everyday life easier.",
-    "html": "HTML / CSS",
-    "git": "Visual Studio Code / Git / Bitbucket ",
-    "css": "Bootstrap / Tailwind CSS",
-    "js": "JavaScript / TypeScript / C",
-    "a11y": "Web Accessibility",
-    "next": "Next.js",
-    "react": "React JS"
+    "coderParagraph": "In my opinion, programming is the best part of my job because it allows me to put what I study and learn into practice. For me, writing code is not just a job: it helps me develop an effective way of thinking that impacts my everyday life, teaching me to tackle one problem at a time and to simplify, analyse, and break things down.",
+    "explorer": "Explorer",
+    "explorerParagraph": "More specifically, I would describe myself as an 'explorer of the mind'. I enjoy reflecting on problems and seeking different ways to approach them. This is particularly useful in this line of work, which constantly demands strong mental engagement. Breaking issues down and getting to the heart of each one often helps me discover better solutions.",
+    "curious": "Curious",
+    "curiousParagraph": "I must say that I am most proud of my curiosity. It keeps me active and engaged with life, encouraging me to explore new ideas and perspectives. It helps me appreciate even the smallest nuances and fuels my enthusiasm for discovering, learning, and truly understanding new things. I believe this curiosity not only enriches my personal life but also drives my growth and effectiveness in my professional endeavors."
   },
   "prefooter": {
     "goToContactBtn": "Contact me"
@@ -63,7 +55,7 @@
     "algorithms": "Algorithms",
     "development": "Development",
     "a11y": "Accessibility",
-    "study": "Study"
+    "study": "Learn"
   },
   "project": {
     "title": "Projects I have worked on...",
