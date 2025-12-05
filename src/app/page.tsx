@@ -98,7 +98,24 @@ export default function Homepage() {
       {/* paragraph section */}
       <section className="p-8 md:p-16">
         <article>
-          <p className="text-center">{t("homepage.presentation")}</p>
+          <p className="text-center p-4">{t("homepage.presentation")}</p>
+          <div className="flex gap-4 max-sm:flex-col p-8 justify-center">
+            <a
+              className="btn"
+              href="/files/CamillaBarbieri_CV.pdf"
+              download="CamillaBarbieri_CV.pdf"
+            >
+              {t("homepage.downloadCV")}
+            </a>
+            <a
+              className="btn"
+              href="https://wa.me/971589661309"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("homepage.contactme")}
+            </a>
+          </div>
         </article>
       </section>
       {/* cards section */}

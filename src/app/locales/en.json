@@ -8,7 +8,9 @@
   },
   "homepage": {
     "job": "Frontend Developer",
-    "presentation": "I’m a Front-end Developer with 3+ years of experience building enterprise-level e-commerce platforms for international brands. Expert in React, Next.js and TypeScript, with strong skills in Web Accessibility.",
+    "presentation": "I’m a Front-end Developer with almost 4 years of experience building enterprise-level e-commerce platforms for international brands. Expert in React, Next.js and TypeScript, with strong skills in Web Accessibility.",
+    "downloadCV": "Download my CV",
+    "contactme": "Send WhatsApp",
     "strengths": "My strengths",
     "card": {
       "card1": "Algorithms",
