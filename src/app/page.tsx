@@ -101,19 +101,31 @@ export default function Homepage() {
           <p className="text-center p-4">{t("homepage.presentation")}</p>
           <div className="flex gap-4 max-sm:flex-col p-8 justify-center">
             <a
-              className="btn"
+              className="cta"
               href="/files/CamillaBarbieri_CV.pdf"
               download="CamillaBarbieri_CV.pdf"
             >
               {t("homepage.downloadCV")}
+              <Image
+                src="/img/download.png"
+                alt="resume"
+                width={40}
+                height={40}
+              />
             </a>
             <a
-              className="btn"
+              className="cta"
               href="https://wa.me/971589661309"
               target="_blank"
               rel="noopener noreferrer"
             >
               {t("homepage.contactme")}
+              <Image
+                src="/img/whatsapp.png"
+                alt="whatsapp"
+                width={40}
+                height={40}
+              />
             </a>
           </div>
         </article>

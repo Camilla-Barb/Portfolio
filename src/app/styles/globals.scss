@@ -43,6 +43,10 @@ body {
   @apply self-center p-2 rounded-xl font-bold text-coffee bg-yellow-900/10;
 }
 
+.cta {
+  @apply flex items-center pl-4 pr-2 rounded-xl font-bold text-coffee bg-yellow-900/10;
+}
+
 .input {
   @apply w-full p-2 border border-gray-300 rounded mb-4;
 }
