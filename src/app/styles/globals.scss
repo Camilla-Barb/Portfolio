@@ -47,7 +47,29 @@ body {
 }
 
 .cta {
-  @apply flex items-center pl-4 pr-2 rounded-xl font-bold text-coffee bg-yellow-900/10;
+  @apply flex items-center justify-center pl-4 pr-2 rounded-xl font-bold text-coffee bg-yellow-900/10;
+}
+
+.showMoreBtn {
+  @apply self-center p-2 rounded-xl text-coffee underline;
+}
+
+.ellipsis {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 10;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 4px;
+  @media (min-width: 640px) {
+    -webkit-line-clamp: 4;
+  }
+}
+
+.showAll {
+  display: block;
+  -webkit-line-clamp: unset;
+  overflow: visible;
 }
 
 .input {
